@@ -1,0 +1,14 @@
+#!/usr/bin/env zsh
+
+greet(){
+	local name=$1
+	echo "hello $name"
+	return 0
+}
+
+for i in "$@"; do
+	greet "$i"
+done
+
+greet dev
+echo "$?"

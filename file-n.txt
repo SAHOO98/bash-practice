@@ -1,0 +1,15 @@
+heloo
+A
+B
+C
+macos
+MacOs
+
+dnnn
+Darwin Saptarshis-MacBook-Air.local 27.0.0 Darwin Kernel Version 27.0.0: Tue Aug 11 21:02:57 PDT 2026; root:xnu-134
+32.1.9~1/RELEASE_ARM64_T8132 arm6
+final line
+hello godel.
+hello valentino.
+hello Johan.
+hello rosser

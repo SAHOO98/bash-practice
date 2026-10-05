@@ -1,0 +1,32 @@
+#!/usr/bin/env zsh
+
+a=2
+b=2
+
+if [[ $a ==  $b ]]; then
+	echo '$a and $b are same.'
+fi
+
+c=4
+d=5
+
+if [[ $c!=$d  ]]; then
+	echo '$c and $d are not same'
+fi
+
+if [[ -f "file.txt"  ]]; then 
+	echo 'file exist'
+else 
+	echo 'file.txt does not exixts'
+fi
+
+if [[ -n "$1" ]]; then 
+	mkdir "$1"
+
+	while [[ -d "$1"  ]]; do
+		echo "$1 exists"
+		sleep 1
+	done
+
+	echo "$1 does not exist"
+fi

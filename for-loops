@@ -1,0 +1,24 @@
+#!/usr/bin/env zsh
+
+echo -n 'nums: '
+for nums in {1..5}; do
+	echo -n "$nums "
+done
+echo
+
+echo -n 'alps: '
+for alps in {a..s}; do
+	echo -n "$alps "
+done
+echo
+
+# c style for loop
+
+max=9
+echo -n "C style for-loop: "
+for ((i=1; i<=max; i++)); do
+	echo -n "$i "
+done
+
+echo
+
