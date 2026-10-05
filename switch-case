@@ -1,0 +1,19 @@
+#!/usr/bin/env zsh
+
+s=$1
+
+case "$s" in
+	1) 
+		echo "case 1"
+		;;
+	2)
+		echo "case 2"
+		;;
+	3)
+		echo "case 3"
+		;;
+	*)	
+		echo "default case"
+		;;	
+esac
+		
