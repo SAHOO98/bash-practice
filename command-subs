@@ -1,0 +1,35 @@
+#!/usr/bin/env zsh
+
+id=`whoami`
+
+echo "id is $id"
+
+u_name=$(uname -v)
+
+
+echo "u_name : $u_name"
+
+
+# Another type of function call. Notice in this way of doing things we are accessing a subshell. Hence global variable will not be affected. I will desmonstratet that too. 
+echo
+echo
+i=6
+my-func(){
+	s=$1
+	((i+=63))
+	echo "$s $i"
+}
+echo Command Substitution :
+echo "Before i: $i"
+cmd_sub=$(my-func cmd-subst)
+echo "cmd_sub is $cmd_sub"
+echo "After i: $i"
+echo
+echo
+echo "Normal function call :"
+echo "Before i: $i"
+echo -n "func-call is "
+my-func func-call 
+echo "After i: $i"
+
+

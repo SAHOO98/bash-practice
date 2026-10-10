@@ -1,0 +1,43 @@
+#!/usr/bin/env zsh
+
+#zsh arrays are indexed from 1 compared to bash; which are indexed from 0.
+
+fruits=(apple orange bananna pineapple "water melon")
+
+echo "${fruits[3]}"
+echo "${fruits[-2]}"
+
+# This transform an array to a string 
+echo "${fruits[*]}"
+# this is demonstrated in the below for-loop
+for x in "${fruits[*]}"; do
+	echo "item :$x"
+done
+
+# This will create an iterator over the array
+echo "${fruits[@]}"
+# demonstrated in uisng the for-loop
+for x in "${fruits[@]}"; do
+	echo "Fruit: $x"
+done
+echo
+echo "Updated fruit array: "
+more_fruits=("${fruits[@]}" "musk melon" kiwi)
+
+for x in "${more_fruits[@]}"; do 
+	echo "fruit :$x"
+done
+
+echo
+echo another array update:
+
+more_fruits+=(jackfruit mango lemon lime)
+
+for x in "${more_fruits[@]}"; do
+	echo "fruit : $x"
+done
+
+echo Lenght of arrays:
+
+echo "|fruits| = ${#fruits}"
+echo "|more_fruits| = ${#more_fruits}"

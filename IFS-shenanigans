@@ -1,0 +1,7 @@
+#!/usr/bin/env zsh
+
+
+fruits=(apple orange bananna pineapple "water melon")
+
+IFS=,
+echo "${fruits[*]}"

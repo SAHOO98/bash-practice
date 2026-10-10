@@ -1,0 +1,17 @@
+#!/usr/bin/env  bash
+
+# Associative arrays are like dicts in python 
+# If we index to a non-existing index then we get empty string as a output. Same happens for nomral array
+declare -A arr
+
+arr[eggs]=4
+arr[milk]=5
+arr[fish]=9
+arr[paper]=30
+
+echo "${arr[fish]}"
+
+for key in "${!arr[@]}"; do
+	value=${arr[$key]}
+	echo "$key : $value"
+done
